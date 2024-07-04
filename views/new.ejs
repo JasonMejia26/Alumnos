@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nuevo Alumno</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1 class="title">Agregar Nuevo Alumno</h1>
+  <div class="index">
+    <form action="/alumnos" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="alumno[nombre]" id="nombre" required>
+      <br>
+      <br>
+      <label for="apellido">Apellido:</label>
+      <input type="text" name="alumno[apellido]" id="apellido" required>
+      <br>
+      <br>
+      <label for="edad">Edad:</label>
+      <input type="number" name="alumno[edad]" id="edad" required>
+      <br>
+      <br>
+      <label for="curso">Curso:</label>
+      <input type="text" name="alumno[curso]" id="curso" required>
+      <br>
+      <br>
+      <button type="submit" class="botom">Agregar Alumno</button>
+    </form>
+    <br>
+    <button type="submit" class="botom"><a href="/alumnos">Volver a Alumnos</a></button>
+  </div>
+</body>
+</html>

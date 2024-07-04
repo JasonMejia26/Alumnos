@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Editar <%= alumno.nombre %> <%= alumno.apellido %></title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1 class="title">Editar Alumno</h1>
+  <div class="index">
+    <form action="/alumnos/<%= alumno._id %>?_method=PUT" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="alumno[nombre]" id="nombre" value="<%= alumno.nombre %>" required>
+      <br>
+      <br>
+      <label for="apellido">Apellido:</label>
+      <input type="text" name="alumno[apellido]" id="apellido" value="<%= alumno.apellido %>" required>
+      <br>
+      <br>
+      <label for="edad">Edad:</label>
+      <input type="number" name="alumno[edad]" id="edad" value="<%= alumno.edad %>" required>
+      <br>
+      <br>
+      <label for="curso">Curso:</label>
+      <input type="text" name="alumno[curso]" id="curso" value="<%= alumno.curso %>" required>
+      <br>
+      <br>
+      <br>
+      <button type="submit" class="botom">Actualizar Alumno</button>
+      <button type = "submit" class="botom"><a href="/alumnos">Volver a Alumnos</a></button>
+    </form>
+    
+  </div>
+</body>
+</html>

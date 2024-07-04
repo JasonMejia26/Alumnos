@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= alumno.nombre %> <%= alumno.apellido %></title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1 class="title">Alumno</h1>
+  <div class="index">
+    <h2>Alumno:</h2>
+    <br>
+  <h3><strong>Nombre: </strong><%= alumno.nombre %> <%= alumno.apellido %></h3>
+  <br>
+  <h3><strong>Edad:</strong> <%= alumno.edad %></h3>
+  <br>
+  <h3><strong>Curso:</strong> <%= alumno.curso %><h3>
+  <br>
+  <br>
+  <br>
+  <button type="submit" class="botom"><a href="/alumnos/<%= alumno._id %>/edit">Editar</a></button>
+  <button type="submit" class="botom"><a href="/alumnos">Volver</a></button>
+  </div>
+</body>
+</html>
